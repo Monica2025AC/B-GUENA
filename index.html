@@ -1,102 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Proyecto Riegos de Báguena — Blog</title>
-  <style>
-    :root{
-      --bg:#f6f7f9; --card:#ffffff; --muted:#6b7280; --accent:#10b981;
-      --maxw:1000px;
-      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#111}
-    header{background:linear-gradient(90deg, rgba(14,165,233,0.95), rgba(16,185,129,0.95));color:#fff;padding:28px 16px}
-    .wrap{max-width:var(--maxw);margin:0 auto}
-    .brand{display:flex;gap:16px;align-items:center}
-    .brand h1{margin:0;font-size:20px}
-    nav{margin-top:10px}
-    nav a{color:rgba(255,255,255,0.92);text-decoration:none;margin-right:14px;font-weight:600}
-
-    .hero{padding:28px 16px;background:transparent}
-    .hero h2{margin:0 0 8px 0}
-    .hero p{margin:0;color:var(--muted)}
-
-    main{display:grid;grid-template-columns:1fr 320px;gap:24px;padding:24px 16px}
-    .content{background:transparent}
-    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
-    .post{margin-bottom:18px}
-    .post h3{margin:0 0 6px 0}
-    .meta{color:var(--muted);font-size:13px}
-
-    .actions ul{padding-left:18px;margin:8px 0}
-    .accordion{border-top:1px solid #eef2f6;margin-top:12px;padding-top:12px}
-    .accordion summary{cursor:pointer;padding:8px 0;font-weight:600}
-
-    aside .card{position:sticky;top:20px}
-    .search input{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0}
-    .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-    .tag{background:#eefcfb;border:1px solid rgba(15,118,110,0.06);color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:600;font-size:13px}
-
-    footer{text-align:center;padding:28px 16px;color:var(--muted);font-size:14px}
-
-    @media (max-width:900px){main{grid-template-columns:1fr;}.brand h1{font-size:18px}}
-
-    .muted{color:var(--muted)}
-    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
-  </style>
+<meta charset="UTF-8">
+<title>Proyecto de Riegos Báguena</title>
+<style>
+body { font-family: Arial, sans-serif; background:#e9f7f6; margin:0; padding:20px; }
+header { background:#0b6e71; color:white; padding:20px; border-radius:12px; }
+h1 { margin:0; }
+.card { background:white; padding:20px; border-radius:12px; margin:20px 0; box-shadow:0 2px 6px rgba(0,0,0,0.15); }
+details { margin-bottom:15px; }
+summary { font-weight:bold; cursor:pointer; color:#0b6e71; }
+</style>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <div class="brand">
-        <img src="" alt="logo" style="width:42px;height:42px;border-radius:8px;"/>
-        <div>
-          <h1>Proyecto de Acondicionamiento y Digitalización de Riegos — Báguena</h1>
-          <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#campanas">Campañas</a>
-            <a href="#participa">Participa</a>
-            <a href="#contacto">Contacto</a>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
+<header>
+<h1>Proyecto de Acondicionamiento y Digitalización de Riegos Casi Perdidos en Báguena</h1>
+</header>
 
-  <section class="hero wrap">
-    <h2 id="inicio">Sensibilización y divulgación del proyecto</h2>
-    <p>Campañas de concienciación social, información y sensibilización sobre medio ambiente en Báguena.</p>
-  </section>
+<div class="card">
+<h2>Campañas de sensibilización y divulgación</h2>
 
-  <main class="wrap">
-    <div class="content">
-      <article class="card post" id="campanas">
-        <h3>Resumen de campañas y actividades</h3>
-        <p class="muted">Listado de campañas y acciones del proyecto.</p>
-      </article>
-    </div>
+<details open>
+<summary>1. Campaña “El Agua Tiene Memoria”</summary>
+<p><strong>Objetivo:</strong> Poner en valor el patrimonio agrícola tradicional y los sistemas históricos de riego.</p>
+<ul>
+<li>Recogida de testimonios de agricultores mayores.</li>
+<li>Creación de documental o microvídeos.</li>
+<li>Instalación de paneles interpretativos.</li>
+</ul>
+</details>
 
-    <aside>
-      <div class="card">
-        <h4>Buscador rápido</h4>
-        <div class="search">
-          <input id="q" placeholder="Buscar palabra..." />
-        </div>
-        <div class="tags">
-          <span class="tag">Educación</span>
-          <span class="tag">Voluntariado</span>
-          <span class="tag">Digitalización</span>
-        </div>
-      </div>
-    </aside>
-  </main>
+<details>
+<summary>2. Jornadas “El Agua que Nos Une”</summary>
+<p><strong>Objetivo:</strong> Fomentar el sentido de comunidad y corresponsabilidad en la gestión del agua.</p>
+<ul>
+<li>Paseos guiados.</li>
+<li>Charlas de expertos.</li>
+<li>Talleres familiares.</li>
+</ul>
+</details>
 
-  <footer>
-    <div class="wrap">
-      <small>© Proyecto Acondicionamiento y Digitalización de Riegos — Báguena</small>
-    </div>
-  </footer>
+<details>
+<summary>3. Campaña Escolar “Gota a Gota, Cuidamos Báguena”</summary>
+<p><strong>Objetivo:</strong> Sensibilizar a niños y jóvenes sobre el uso responsable del agua.</p>
+<ul>
+<li>Concurso de dibujos y relatos.</li>
+<li>Club del Agua.</li>
+<li>Monitorización del ahorro en el colegio.</li>
+</ul>
+</details>
+
+<details>
+<summary>4. Exposición “Riegos Vivos: Pasado, Presente y Futuro”</summary>
+<p><strong>Objetivo:</strong> Divulgar el impacto medioambiental del proyecto.</p>
+<ul>
+<li>Exposición fotográfica itinerante.</li>
+<li>Maquetas interactivas.</li>
+<li>Paneles sobre digitalización del riego.</li>
+</ul>
+</details>
+
+<details>
+<summary>5. Campaña Digital “Agua Inteligente”</summary>
+<p><strong>Objetivo:</strong> Mostrar beneficios de la digitalización.</p>
+<ul>
+<li>Minivideos educativos.</li>
+<li>Infografías.</li>
+<li>Testimonios de agricultores.</li>
+</ul>
+</details>
+
+<details>
+<summary>6. Voluntariado Ambiental “Adopta una Acequia”</summary>
+<p><strong>Objetivo:</strong> Implicar a la comunidad en el cuidado del sistema de riego.</p>
+<ul>
+<li>Jornadas de limpieza.</li>
+<li>Placas con nombres de grupos.</li>
+<li>Compromiso de vigilancia ambiental.</li>
+</ul>
+</details>
+
+<details>
+<summary>7. Podcast “Agua y Tierra: Voces de Báguena”</summary>
+<p><strong>Objetivo:</strong> Crear un espacio de divulgación ambiental y agrícola.</p>
+<ul>
+<li>Entrevistas.</li>
+<li>Episodios temáticos.</li>
+</ul>
+</details>
+
+</div>
+
 </body>
 </html>
